@@ -9,9 +9,9 @@ import (
 
 	"github.com/gorilla/mux"
 	hclog "github.com/hashicorp/go-hclog"
-	"github.com/nicholasjackson/building-microservices-youtube/product-images/files"
-	"github.com/nicholasjackson/building-microservices-youtube/product-images/handlers"
 	"github.com/nicholasjackson/env"
+	"github.com/voideus/microservices-go/product-images/files"
+	"github.com/voideus/microservices-go/product-images/handlers"
 )
 
 var bindAddress = env.String("BIND_ADDRESS", false, ":9090", "Bind address for the server")
